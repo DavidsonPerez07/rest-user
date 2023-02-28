@@ -2,9 +2,15 @@ package com.davidsonperez.practica.restuser.web.dto;
 
 import java.io.Serializable;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor @AllArgsConstructor
+@Builder
 public class UserDto implements Serializable{
     private Long id;
-    private String userName;
+    private String username;
     private String password;
     private String name;
     private String email;
@@ -17,12 +23,12 @@ public class UserDto implements Serializable{
         this.id = idUser;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String userName) {
+        this.username = userName;
     }
 
     public String getPassword() {
